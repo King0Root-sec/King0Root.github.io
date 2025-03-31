@@ -63,7 +63,8 @@ swampCTF{f1l3_r34d_4nd_d3s3r14l1z3_pwn4g3_x7q9z2r5v8}
 
 - Solve script
 python3
-[from pwn import *
+[#!/usr/bin/python3
+from pwn import *
 
 # Set up connection to the challenge server
 HOST = "chals.swampctf.com"
