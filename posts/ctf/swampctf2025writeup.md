@@ -2,7 +2,8 @@
 ### CTF: **SwampCTF**
 * * *
 
-![image](https://github.com/user-attachments/assets/4fa8daa1-b9f6-4d60-9a81-3b306c0e40c6)
+![image](https://github.com/user-attachments/assets/e85ba37f-462c-4762-9886-468bf675e5ea)
+
 
 --------------------------------
 
@@ -35,6 +36,8 @@
 ### Web:
 
 ### Challenge: Serialies
+![image](https://github.com/user-attachments/assets/64b27c27-c8b1-4d4a-8e72-2859105706a7)
+
 
 
 
