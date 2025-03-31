@@ -159,8 +159,7 @@ After i unzip the file, there is challenge.js and i Copy and paste the challenge
 
 ### Challenge: Preferential Treatment:
 ![image](https://github.com/user-attachments/assets/84ac06e1-0957-45a5-ab7b-3c04a9dbc6b6)
-
-when checking the pcap following the tcp you can see the following:
+- when checking the pcap following the tcp you can see the following:
 "<Groups clsid="{3125E937-EC16-4b4c-9934-544FC6D24D26}">
     <User clsid="{DF5F1855-52E5-4d24-8B1A-D9BDE98BA1D1}" name="swampctf.com\Administrator" image="2"
           changed="2018-07-18 20:46:06" uid="{EF57DA28-5F69-4530-A59E-AAB58578219D}">
@@ -169,10 +168,11 @@ when checking the pcap following the tcp you can see the following:
                     changeLogon="0" noChange="1" neverExpires="1" acctDisabled="0" userName="swampctf.com\Administrator"/>
     </User>
 </Groups>"
-then I looked up what that was and realized it was a weakly encrypted password
-so I found a repo to decrypt it.
+- then I looked up what that was and realized it was a weakly encrypted password
+- so I found a repo to decrypt it.
 "https://github.com/t0thkr1s/gpp-decrypt"
-```gpp-decrypt "dAw7VQvfj9rs53A8t4PudTVf85Ca5cmC1Xjx6TpI/cS8WD4D8DXbKiWIZslihdJw3Rf+ijboX7FgLW7pF0K6x7dfhQ8gxLq34ENGjN8eTOI="
+```
+gpp-decrypt "dAw7VQvfj9rs53A8t4PudTVf85Ca5cmC1Xjx6TpI/cS8WD4D8DXbKiWIZslihdJw3Rf+ijboX7FgLW7pF0K6x7dfhQ8gxLq34ENGjN8eTOI="
 ```
 - Flag: swampCTF{4v3r463_w1nd0w5_53cur17y}
 
