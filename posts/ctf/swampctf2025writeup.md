@@ -7,7 +7,7 @@
 
 --------------------------------
 
-### Challenges
+### Challenges Solved
 
 - Web:
   - Serialies
