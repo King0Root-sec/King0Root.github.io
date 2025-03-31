@@ -62,8 +62,7 @@ swampCTF{f1l3_r34d_4nd_d3s3r14l1z3_pwn4g3_x7q9z2r5v8}
 ![image](https://github.com/user-attachments/assets/708c2055-022e-4c34-a702-e39f67354b5a)
 
 - Solve script
-python3
-[#!/usr/bin/python3
+```python
 from pwn import *
 
 # Set up connection to the challenge server
@@ -88,8 +87,9 @@ p.sendline(b"y")
 print(p.recvall().decode())
 
 # Close connection
-p.close()]
- 
+p.close()
+
+
 ### Challenge: Beginner Pwn 2
 ![image](https://github.com/user-attachments/assets/cc125998-d69a-423d-b5e8-3bdd7eebf32e)
 
