@@ -112,11 +112,13 @@ so I found a repo to decrypt it.
 ### OSINT      
 
 ### Challenge: Party Time! 
+![image](https://github.com/user-attachments/assets/f3f16896-d45f-461a-9c41-b047cb34c697)
 
-![image](https://github.com/user-attachments/assets/91a1e5d3-9522-4c9e-a693-447c53295b2b)
 
 
 ### Challenge: Party Time! Level 2
+![image](https://github.com/user-attachments/assets/dcd2698c-1dd1-479b-b215-517fa5dec4f3)
+
 
 
 --------------------------------
@@ -124,10 +126,12 @@ so I found a repo to decrypt it.
 ### CRYPTO:
 
 ### Challenge: Rock my Password 
+![image](https://github.com/user-attachments/assets/bba615e3-4145-4d6d-9129-5a296d8598ba)
 
-![image](https://github.com/user-attachments/assets/7407df79-4ad6-4107-bebe-d4286b70a1c9)
 
 ### Challenge: Intercepted communications
+![image](https://github.com/user-attachments/assets/b84f48ac-de68-4af6-b0cd-dc8dd0cdf699)
+
 
 
 
