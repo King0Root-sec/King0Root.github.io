@@ -1,6 +1,6 @@
 # 🏆 SillyCTF 2025 Write-ups  
 
-Team: **1c3Gh3tt0 Secure**  
+Team: **1c3Gh3tt0**  
 🥇 **First Place** at SillyCTF 2025  
 
 ## Write-ups  
